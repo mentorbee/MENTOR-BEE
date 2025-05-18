@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mentor Bee - Expert coaching for UGC NET, JRF, PhD entrance, and academic success." />
+  <meta name="keywords" content="Mentor Bee, UGC NET coaching, JRF preparation, PhD entrance coaching, online classes, English literature, NET exam" />
+  <title>Mentor Bee | UGC NET & PhD Coaching</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --blue: #2a52be;
+      --blue-light: #4a90e2;
+      --text-dark: #2c3e50;
+    }
+
+    * { box-sizing: border-box }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #FFFC94 url('template.png') no-repeat center/cover;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); text-decoration: none }
+
+    .hero {
+      background: linear-gradient(135deg, #2a52be 0%, #4a90e2 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      padding: 70px 20px 60px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .hero-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .hero-title {
+      font-size: 46px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .hero-tagline {
+      margin: 10px 0 0;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .hero-wave {
+      display: block;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+
+    @media(max-width: 600px) {
+      .hero-inner { padding: 60px 15px 50px }
+      .hero-logo { width: 100px }
+      .hero-title { font-size: 32px }
+      .hero-tagline { font-size: 16px }
+    }
+
+    #admissionBanner {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 300px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      z-index: 1000;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #admissionBanner img { width: 100%; border-radius: 8px }
+
+    #admissionBanner .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #999;
+      cursor: pointer;
+    }
+
+    #admissionBanner .close-btn:hover { color: var(--blue) }
+
+    .navbar {
+      background: var(--blue);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+
+    .navbar a {
+      color: #fff;
+      padding: 14px 20px;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .navbar a:hover { background: var(--blue-light) }
+
+    .header-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 20px 10px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .header-title img { width: 60px; height: auto }
+
+    .header-title h1 {
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      color: var(--text-dark);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    #contact {
+      padding: 40px;
+      background-color: #f9f9f9;
+      border-top: 2px solid #ccc;
+    }
+
+    #contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    }
+
+    h2 { color: var(--text-dark); margin-top: 0 }
+
+    ul { margin-left: 1.5em }
+
+    ul li { margin-bottom: .8em }
+
+    .center-image {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .center-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    }
+
+    .contact-section { margin-top: 40px }
+
+    form { display: grid; gap: 15px }
+
+    input, textarea {
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font: inherit;
+      width: 100%;
+    }
+
+    textarea { resize: vertical; min-height: 120px }
+
+    button.submit-btn {
+      background: var(--blue);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    button.submit-btn:hover { background: var(--blue-light) }
+
+    footer {
+      background: var(--blue);
+      color: #fff;
+      margin-top: 60px;
+      padding: 30px 20px 40px;
+      text-align: center;
+    }
+
+    footer a { color: #fff; text-decoration: underline }
+
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: #25D366;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,.25);
+      transition: .3s;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.1) }
+
+    .whatsapp-float img {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media(max-width:600px) {
+      .header-title img { width: 50px }
+      .header-title h1 { font-size: 24px }
+      .navbar a { padding: 12px; font-size: 14px }
+      main { padding: 25px 15px }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="symbol.png" alt="Mentor Bee Logo" class="hero-logo">
+      <h1 class="hero-title">MENTOR BEE</h1>
+      <p class="hero-tagline">Unlock • Inspire • Excel</p>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,64 C360,120 720,0 1440,64 L1440,80 L0,80 Z" fill="#ffffff"></path>
+    </svg>
+  </header>
+
+  <!-- Admission Banner -->
+  <div id="admissionBanner">
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+    <img src="admission1.png" alt="Admission Open Banner">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Logo + Title -->
+  <div class="header-title" id="home">
+    <img src="symbol.png" alt="Mentor Bee Logo">
+    <h1>MENTOR BEE</h1>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <p>Welcome to <strong>Mentor Bee</strong>, where learning meets inspiration! Education goes beyond textbooks — it's about igniting curiosity, building confidence, and unlocking your full potential.</p>
+    <p>Join a vibrant community of learners, dreamers, and achievers. Whether you're starting fresh or aiming higher, our expert-led classes guide you every step of the way.</p>
+    <p><strong>Register now and take the first step toward a brighter future with us!</strong></p>
+
+    <h2 id="programs">Our Core Programs Include</h2>
+
+    <section>
+      <h3>UGC NET & JRF Coaching-2500/-</h3>
+      <p>Expert guidance in Paper I and English Literature for UGC NET. Personalized mentoring, test series, and concept clearing classes aimed at ensuring JRF success.In this pack we cover English Literature aptitude tests based questions and quantitavie mathematical aptitude questions.The course will cover entire syllabus focusing texts like The history of english literature by Edward Albert,Encyclopedias of English Literature and Indian Literature.</p>
+    </section>
+
+    <section>
+      <h3>PhD Entrance Preparation-1500/-</h3>
+      <p>Specialized training for university-level PhD entrance tests including research methodology, literary theory, and mock interviews. Ideal for students targeting central universities.In this pack we cover English Literature aptitude tests based questions and quantitavie mathematical aptitude questions.The course will cover entire syllabus focusing texts like The history of english literature by Edward Albert,Encyclopedias of English Literature and Indian Literature.</p>
+    </section>
+
+    <section>
+      <h3>CUET PG & UG Entrance Coaching-2000/-</h3>
+      <p>CUET-focused modules covering English, general aptitude, and subject-specific support. Ideal for students targeting central universities.In this pack we cover English Literature aptitude tests based questions and quantitavie mathematical aptitude questions.The course will cover entire syllabus focusing texts like The history of english literature by Edward Albert,Encyclopedias of English Literature and Indian Literature.</p>
+    </section>
+
+    <section>
+      <h3>Personalised Spoken English Training-650/-</h3>
+      <p>Individual attention to enhance fluency, grammar, and confidence. Tailored modules for academic, interview, and public speaking skills.</p>
+    </section>
+    <section>
+      <h3>Creative writting in English-700/-</h3>
+      <p>Helps to improve children and school studnets writting skills.Usually students who studied and hardwork well before exams but some studnets failed to write everything into paper on exam because of their poor writtinh skills.Here we enhance their writting skills using practice of their writting skills, correction group activities,image description,appreciation,debates etc.</p>
+    </section>
+
+    <div class="center-image">
+      <img src="crashcourse.png" alt="Crash Course Banner">
+    </div>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="submit-btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=919037084862" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mentor Bee. All rights reserved.</p>
+    <div class="footer-links">
+      <span>Email: <a href="mailto:mentorbee19@gmail.com">mentorbee19@gmail.com</a></span>
+      <span>Phone: <a href="tel:+919037084862">+91 90370 84862</a></span>
+      <span><a href="#home">Back to top</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
